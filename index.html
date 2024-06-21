@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - One stop for all your music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="overflow-x-hidden">
+    <nav class="bg-black font-['Ubuntu', sans-serif]">
+        <ul class="xl:mx-[15%] flex items-center h-[50px] mx-5 text-white">
+            <li class="flex items-center gap-2 text-xl cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-spotify" viewBox="0 0 16 16">
+                <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288"/>
+                </svg>
+                Spotify
+            </li>
+            <li class="px-4 py-2 ml-auto text-sm font-medium transition-all duration-300 hover:text-black hover:bg-white hover:rounded-3xl cursor-pointer" id="home">Home</li>
+        </ul>
+    </nav>
+
+    <!-- Songs Containers -->
+    <div class="bg-black md:h-[600px] w-[90vw] xl:w-[70vw] m-auto mt-3 mb-[150px] md:mb-[100px] p-4 md:p-4 rounded-[20px] font-['Ubuntu', sans-serif] font-medium grid grid-cols-3 grid-rows-3 gap-4">
+        <div class="p-1 md:p-2 rounded-[14px] bg-gradient-to-b from-[#ff4d4d] to-[#900f2f] flex md:flex-row flex-col gap-2 album cursor-pointer">
+            <img class="w-[100px] md:w-[50%] rounded-[10px]" src="./assets/Aavesham.jpg" alt="Aavesham">
+            <div class="px-1 md:px-3 md:self-end">
+                <span class="text-white">Aavesham</span>
+                <marquee class="pb-2 text-gray-400 text-[14px] leading-4">Sushin Shyam, Vinayak Sasikumar</marquee>
+            </div>
+        </div>
+        <div class="p-1 md:p-2 rounded-[14px] bg-gradient-to-b from-[#A91D3A] to-[#151515] flex md:flex-row flex-col gap-2 album cursor-pointer">
+            <img class="w-[100px] md:w-[50%] rounded-[10px]" src="./assets/Animal.jpg" alt="Animal">
+            <div class="px-1 md:px-3 md:self-end">
+                <span class="pb-[15px] text-white">Animal</span>
+                <marquee class="pb-2 text-gray-400 text-[14px] leading-4 font-light">Manan Bhardwaj, Jaani</marquee>
+            </div>
+        </div>
+        <div class="p-1 md:p-2 rounded-[14px] bg-gradient-to-b from-[#840a86] via-[#327cbd] to-[#000000] flex md:flex-row flex-col gap-2 album cursor-pointer">
+            <img class="w-[100px] md:w-[50%] rounded-[10px]" src="./assets/Anirudh.jpg" alt="Anirudh">
+            <div class="px-1 md:px-3 md:self-end">
+                <span class="text-white">Anirudh</span>
+                <marquee class="pb-2 text-gray-400 text-[14px] leading-4 font-light">Anirudh Ravichander</marquee>
+            </div>
+        </div>
+        <div class="p-1 md:p-4 rounded-[14px] bg-gradient-to-b from-[#392467] to-[#5D3587] flex md:flex-row gap-2 col-span-2 album cursor-pointer">
+            <img class="w-[100px] sm:w-[50%] md:w-[25%] h-[150px] rounded-[10px]" src="./assets/Global.jpg" alt="Global">
+            <div class="px-3 self-end">
+                <span class="text-white">Top Songs</span>
+                <marquee class="pb-2 text-gray-400 text-[14px] leading-4 font-light">Playlist - Spotify</marquee>
+            </div>
+        </div>
+        <div class="p-1 md:p-4 rounded-[14px] bg-gradient-to-b from-[#B6BBC4] to-[#161A30] flex md:flex-row gap-2 col-span-2 order-1 album cursor-pointer">
+            <img class="w-[100px] sm:w-[50%] md:w-[25%] h-[150px] rounded-[10px]" src="./assets/HipHop.jpg" alt="HipHop">
+            <div class="px-3 self-end">
+                <span class="text-white">HipHop Mix</span>
+                <br>
+                <span class="pb-2 text-gray-400 text-[14px] leading-4 font-light">Genre</span>
+            </div>
+        </div>
+        <div class="p-1 md:p-2 rounded-[14px] bg-gradient-to-b from-[#31304D] to-[#B6BBC4] flex md:flex-row flex-col gap-2 album cursor-pointer">
+            <img class="w-[100px] md:w-[50%] rounded-[10px]" src="./assets/HoneySingh.jpg" alt="HoneySingh">
+            <div class="px-1 md:px-3 md:self-end">
+                <span class="text-black">Kalaastar</span>
+                <marquee class="pb-2 text-gray-800 text-[14px] leading-4 font-light">Honey Singh</marquee>
+            </div>
+        </div>
+        <div class="p-1 md:p-2 rounded-[14px] bg-gradient-to-b from-[#A3D8FF] to-[#E1F7F5] flex md:flex-row flex-col gap-2 album cursor-pointer">
+            <img class="w-[100px] md:w-[50%] rounded-[10px]" src="./assets/Shubh.jpg" alt="Shubh">
+            <div class="px-1 md:px-3 md:self-end">
+                <span class="text-black">Shubh</span>
+                <br>
+                <span class="pb-2 text-gray-800 text-[14px] leading-4 font-light">Shubh</span>
+            </div>
+        </div>    
+    </div>
+    
+    <!--  Music controls  -->
+    <div class="bg-black flex flex-col justify-center items-center fixed bottom-0 w-full h-[80px]" id="musicControls">
+        <div class="flex justify-center items-center gap-4 mb-2 cursor-pointer">
+           
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" viewBox="0 0 320 512">
+                <path d="M267.5 440.6c9.5 7.9 22.8 9.7 34.1 4.4s18.4-16.6 18.4-29V96c0-12.4-7.2-23.7-18.4-29s-24.5-3.6-34.1 4.4l-192 160L64 241V96c0-17.7-14.3-32-32-32S0 78.3 0 96V416c0 17.7 14.3 32 32 32s32-14.3 32-32V271l11.5 9.6 192 160z"/>
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-play-circle-fill" viewBox="0 0 16 16" id="playBtn" class="play">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="white" viewBox="0 -960 960 960" id="playBtn" class="hidden pause">
+                <path d="M360-320h80v-320h-80v320Zm160 0h80v-320h-80v320ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/>
+            </svg>
+
+           
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" viewBox="0 0 320 512">
+                <path d="M52.5 440.6c-9.5 7.9-22.8 9.7-34.1 4.4S0 428.4 0 416V96C0 83.6 7.2 72.3 18.4 67s24.5-3.6 34.1 4.4l192 160L256 241V96c0-17.7 14.3-32 32-32s32 14.3 32 32V416c0 17.7-14.3 32-32 32s-32-14.3-32-32V271l-11.5 9.6-192 160z"/>
+            </svg>
+        </div>
+        <input class="mt-1 w-6/12 h-[4px] cursor-pointer" type="range" name="range" id="progressBar" min="0" value="0" max="100">  
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
